@@ -53,9 +53,10 @@ function MEPHunter_OpeningFcn(hObject, eventdata, handles, varargin)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 % varargin   command line arguments to MEPHunter (see VARARGIN)
-MEPHnter_logo = load('MEPHunter_logo.mat');
+% MEPHnter_logo = load('MEPHunter_logo.mat');
+MEPHnter_logo = load('mephunter_logo.mat');
 axes(handles.axes1)
-image(MEPHnter_logo.ima)
+image(MEPHnter_logo.logo)
 pause(2)
 MEPHunter_Main
 close
